@@ -31,9 +31,9 @@ const Leftbar = (classWitdraw, c2, c3, c4) => {
                     <h3 className="left-container-h3 left-flex-container-h"> <img src='/icons/currency-usd-g.png' className='dollar--svg'></img><span className="fontw-l"> { saldo }</span></h3>
                 </div>
 
-                <Link href={'/extra'}>
+                {/* <Link href={'/extra'}>
                     <img src='/icons/right-arrow-svg.svg' className='right-arrow--svg'></img>
-                </Link>
+                </Link> */}
                 
             </div>
             <div className="left-container-body">
