@@ -1,3 +1,9 @@
 # dotaclient-gitlab
 
-![image](https://user-images.githubusercontent.com/70583259/188337133-baa90a19-93bd-4688-9f4e-9f3e7693a2f5.png)
+El excel es el siguiente: https://docs.google.com/spreadsheets/d/1BHS8d527uCLsPJILBA5Sg5gM79jNTYYgiXYFa9fl4wE/edit?usp=sharing
+
+![image](https://user-images.githubusercontent.com/70583259/188525162-1dfe3687-34f5-4c84-bd26-cecac08f75f8.png)
+
+
+
+
