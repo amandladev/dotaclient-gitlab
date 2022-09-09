@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import AppService from '../../services/app.service';
 
-const Leftbar = (classWitdraw, c2, c3, c4) => {
+const Leftbar = (classWitdraw, c2, c3, c4, c5, c6) => {
 
 
     const user = localStorage.getItem("user");
@@ -40,7 +40,7 @@ const Leftbar = (classWitdraw, c2, c3, c4) => {
                 <div className="left-container-body-item">
                     <Link href="/play">
                         <a className={classWitdraw.c2}>
-                            <img className="left-container-img left-img-active" src="/icons/controller-classic-l.png" alt="home" /> 
+                            <img className="left-container-img left-img-active" src="/icons/controller-classic-l.png" alt="play" /> 
                             <h3 className="left-container-h3 left-h3-active">JUEGA</h3>
                         </a>
                     </Link>
@@ -48,7 +48,7 @@ const Leftbar = (classWitdraw, c2, c3, c4) => {
                 <div className="left-container-body-item">
                     <Link href="/profile">
                         <a className={classWitdraw.c4} >
-                            <img  className="left-container-img left-img-active" src="/icons/account-l.png" alt="home" /> 
+                            <img  className="left-container-img left-img-active" src="/icons/account-l.png" alt="profile" /> 
                             <h3 className="left-container-h3  left-h3-active">PERFIL</h3>
                         </a>
                     </Link>
@@ -56,7 +56,7 @@ const Leftbar = (classWitdraw, c2, c3, c4) => {
                 <div className="left-container-body-item">
                     <Link href="/deposit"> 
                         <a className={classWitdraw.c3}>
-                            <img className="left-container-img left-img-active" src="/icons/cash-fast-l.png" alt="home" /> 
+                            <img className="left-container-img left-img-active" src="/icons/cash-fast-l.png" alt="deposit" /> 
                             <h3 className="left-container-h3 left-h3-active">DEPOSITO</h3>
                         </a>
                     </Link>
@@ -64,30 +64,28 @@ const Leftbar = (classWitdraw, c2, c3, c4) => {
                 <div className="left-container-body-item">
                     <Link href="/withdraw">
                         <a className={classWitdraw.classWitdraw} >
-                            <img className="left-container-img left-img-active" src="/icons/currency-usd-l.png" alt="home" /> 
+                            <img className="left-container-img left-img-active" src="/icons/currency-usd-l.png" alt="withdraw" /> 
                             <h3 className="left-container-h3 left-h3-active">RETIRO</h3>
                         </a>
                     </Link> 
                 </div>
-                <div className="left-container-body-item disable">
-                    <a href="../../pages/solo/solo.html">
-                        <img className="left-container-img" src="icons/alert-outline-l.png" alt="home" /> 
-                        <h3 className="left-container-h3">SOPORTE</h3>
-                    </a>
-                </div>
-                <div className="left-container-body-item disable">
-                    <a href="../../pages/solo/solo.html">
-                        <img className="left-container-img" src="icons/help-box-l.png" alt="home" /> 
-                        <h3 className="left-container-h3">TUTORIAL</h3>
-                    </a>
-                </div> 
-                {/* <div className="left-container-body-item bottom-icon">
-                    <Link href="/">
-                    <a>
-                        <img className="left-container-img" src="/icons/logout-l.png" alt="home" />   
+                <div className="left-container-body-item ">
+                    <Link href="/support">
+                    <a className={classWitdraw.c5}>
+                        <img className="left-container-img left-img-active" src="icons/alert-outline-l.png" alt="support" /> 
+                        <h3 className="left-container-h3 left-h3-active">SOPORTE</h3>
                     </a>
                     </Link>
-                </div> */}
+                </div>
+                <div className="left-container-body-item">
+                    <Link href='/tutorial'>
+                    <a className={classWitdraw.c6}>
+                        <img className="left-container-img left-img-active" src="icons/help-box-l.png" alt="tutorial" /> 
+                        <h3 className="left-container-h3 left-h3-active">TUTORIAL</h3>
+                    </a>
+                    </Link>
+                </div>  
+             
                 
             </div>
         </div>
@@ -124,18 +122,6 @@ const Leftbar = (classWitdraw, c2, c3, c4) => {
             position: relative;
             z-index: 4;
         }
-        .interface {
-            min-height: 62.5rem;
-            
-            background-color: rgba(22, 23, 36 ,1);
-            background-image: url(https://assets.gamersclub.com.br/csgo-frontend/static/media/Background.9db68e3a.png);
-            background-position: center top;
-            background-size: 100%;
-            background-repeat: no-repeat;
-
-            overflow: auto;
-        }
-
         .left-container-header {
             background: #171f30;
             border-bottom: 1px solid #3c5376;
@@ -208,17 +194,6 @@ const Leftbar = (classWitdraw, c2, c3, c4) => {
         .left-container-body-item a {
             display: flex;
             gap: 10px;
-        }
-
-
-
-        .bottom-icon {
-            position: absolute;
-            bottom: 5px;
-        }
-
-        .bottom-icon img {
-            height: 30px;
         }
 
 
